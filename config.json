@@ -8,11 +8,11 @@
         "adapter": {
           "type": "IndexedFastaAdapter",
           "fastaLocation": {
-            "uri": "GCF_000005845.2_ASM584v2_genomic.fna",
+            "uri": "data/data_MG1655/GCF_000005845.2_ASM584v2_genomic.fna",
             "locationType": "UriLocation"
           },
           "faiLocation": {
-            "uri": "GCF_000005845.2_ASM584v2_genomic.fna.fai",
+            "uri": "data/data_MG1655/GCF_000005845.2_ASM584v2_genomic.fna.fai",
             "locationType": "UriLocation"
           }
         }
@@ -88,12 +88,12 @@
       "adapter": {
         "type": "Gff3TabixAdapter",
         "gffGzLocation": {
-          "uri": "cleaned.gff3.gz",
+          "uri": "data/data_MG1655/cleaned.gff3.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "cleaned.gff3.gz.tbi",
+            "uri": "data/data_MG1655/cleaned.gff3.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
@@ -110,7 +110,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "insercoes.bw",
+          "uri": "data/data_MG1655/insercoes.bw",
           "locationType": "UriLocation"
         }
       },
