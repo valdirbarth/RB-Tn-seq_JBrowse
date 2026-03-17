@@ -1,7 +1,7 @@
 {
   "assemblies": [
     {
-      "name": "MG1655",
+      "name": "E. coli MG1655",
       "sequence": {
         "type": "ReferenceSequenceTrack",
         "trackId": "MG1655-ReferenceSequenceTrack",
@@ -17,18 +17,74 @@
           }
         }
       }
+    },
+    {
+      "name": "X. citri MN12",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "X. citri MN12-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "data/data_MN12/GCF_000961215.1_ASM96121v1_genomic.fna",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "data/data_MN12/GCF_000961215.1_ASM96121v1_genomic.fna.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
     }
   ],
-  "configuration": {},
+  "configuration": {
+    "defaultSession": "New Session"
+  },
   "connections": [],
   "defaultSession": {
-    "name": "New Session"
+    "name": "New Session",
+    "view": {
+      "id": "linearGenomeView",
+      "type": "LinearGenomeView",
+      "tracks": [
+        {
+          "type": "ReferenceSequenceTrack",
+          "configuration": "MG1655-ReferenceSequenceTrack",
+          "displays": [
+            {
+              "type": "LinearReferenceSequenceDisplay",
+              "configuration": "MG1655-ReferenceSequenceTrack-LinearReferenceSequenceDisplay"
+            }
+          ]
+        },
+        {
+          "type": "FeatureTrack",
+          "configuration": "cleaned.gff3",
+          "displays": [
+            {
+              "type": "LinearBasicDisplay",
+              "configuration": "cleaned.gff3-LinearBasicDisplay"
+            }
+          ]
+        },
+        {
+          "type": "QuantitativeTrack",
+          "configuration": "insercoes",
+          "displays": [
+            {
+              "type": "LinearWiggleDisplay",
+              "configuration": "insercoes-LinearWiggleDisplay"
+            }
+          ]
+        }
+      ]
+    }
   },
   "tracks": [
     {
       "type": "FeatureTrack",
       "trackId": "cleaned.gff3",
-      "name": "cleaned.gff3",
+      "name": "Genes (GFF3)",
       "adapter": {
         "type": "Gff3TabixAdapter",
         "gffGzLocation": {
@@ -44,7 +100,7 @@
         }
       },
       "assemblyNames": [
-        "MG1655"
+        "E. coli MG1655"
       ]
     },
     {
@@ -59,29 +115,66 @@
         }
       },
       "assemblyNames": [
-        "MG1655"
+        "E. coli MG1655"
       ]
     },
     {
       "type": "FeatureTrack",
       "trackId": "insercoes_sorted.bed",
-      "name": "Locais de Inserção",
+      "name": "Inserções MN12 (BED)",
       "adapter": {
         "type": "BedTabixAdapter",
         "bedGzLocation": {
-          "uri": "insercoes_sorted.bed.gz",
+          "uri": "data/data_MN12/insercoes_sorted.bed.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "insercoes_sorted.bed.gz.tbi",
+            "uri": "data/data_MN12/insercoes_sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "MG1655"
+        "X. citri MN12"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "GCF_000961215.1_ASM96121v1_genomic_ordered.gff3",
+      "name": "Genes MN12",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "data/data_MN12/GCF_000961215.1_ASM96121v1_genomic_ordered.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "data/data_MN12/GCF_000961215.1_ASM96121v1_genomic_ordered.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "X. citri MN12"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "MN12_insercoes",
+      "name": "Densidade Tn-Seq MN12",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "data/data_MN12/MN12_insercoes.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "X. citri MN12"
       ]
     }
   ],
@@ -102,7 +195,45 @@
         "locationType": "UriLocation"
       },
       "assemblyNames": [
-        "MG1655"
+        "E. coli MG1655"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "E. coli MG1655-index",
+      "ixFilePath": {
+        "uri": "trix/E. coli MG1655.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/E. coli MG1655.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/E. coli MG1655_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "E. coli MG1655"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "X. citri MN12-index",
+      "ixFilePath": {
+        "uri": "trix/X. citri MN12.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/X. citri MN12.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/X. citri MN12_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "X. citri MN12"
       ]
     }
   ]
