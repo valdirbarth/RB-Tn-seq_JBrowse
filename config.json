@@ -1,0 +1,109 @@
+{
+  "assemblies": [
+    {
+      "name": "MG1655",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "MG1655-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "GCF_000005845.2_ASM584v2_genomic.fna",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "GCF_000005845.2_ASM584v2_genomic.fna.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    }
+  ],
+  "configuration": {},
+  "connections": [],
+  "defaultSession": {
+    "name": "New Session"
+  },
+  "tracks": [
+    {
+      "type": "FeatureTrack",
+      "trackId": "cleaned.gff3",
+      "name": "cleaned.gff3",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "cleaned.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "cleaned.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "MG1655"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "insercoes",
+      "name": "Densidade de Inserções",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "insercoes.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "MG1655"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "insercoes_sorted.bed",
+      "name": "Locais de Inserção",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "insercoes_sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "insercoes_sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "MG1655"
+      ]
+    }
+  ],
+  "aggregateTextSearchAdapters": [
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "MG1655-index",
+      "ixFilePath": {
+        "uri": "trix/MG1655.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/MG1655.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/MG1655_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "MG1655"
+      ]
+    }
+  ]
+}
