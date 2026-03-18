@@ -83,7 +83,7 @@
   "tracks": [
      {
       "type": "FeatureTrack",
-      "trackId": "insercoes_sorted.bed",
+      "trackId": "data_MG1655/insercoes_sorted.bed",
       "name": "Inserções MG1655 (BED)",
       "adapter": {
         "type": "BedTabixAdapter",
@@ -105,7 +105,7 @@
     },
     {
       "type": "FeatureTrack",
-      "trackId": "cleaned.gff3",
+      "trackId": "data_MG1655/cleaned.gff3",
       "name": "Genes (GFF3)",
       "adapter": {
         "type": "Gff3TabixAdapter",
@@ -127,7 +127,7 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "insercoes",
+      "trackId": "data_MG1655/insercoes",
       "name": "Densidade de Inserções",
       "adapter": {
         "type": "BigWigAdapter",
@@ -142,7 +142,7 @@
     },
     {
       "type": "FeatureTrack",
-      "trackId": "insercoes_sorted.bed",
+      "trackId": "data_MN12/insercoes_sorted.bed",
       "name": "Inserções MN12 (BED)",
       "adapter": {
         "type": "BedTabixAdapter",
@@ -164,7 +164,7 @@
     },
     {
       "type": "FeatureTrack",
-      "trackId": "GCF_000961215.1_ASM96121v1_genomic_ordered.gff3",
+      "trackId": "data_MN12/GCF_000961215.1_ASM96121v1_genomic_ordered.gff3",
       "name": "Genes MN12",
       "adapter": {
         "type": "Gff3TabixAdapter",
@@ -186,7 +186,7 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "MN12_insercoes",
+      "trackId": "data_MN12/MN12_insercoes",
       "name": "Densidade Tn-Seq MN12",
       "adapter": {
         "type": "BigWigAdapter",
