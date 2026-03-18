@@ -38,11 +38,11 @@
     }
   ],
   "configuration": {
-    "defaultSession": "New Session"
+    "defaultSession": "DefaultSession"
   },
   "connections": [],
   "defaultSession": {
-    "name": "New Session",
+    "name": "DefaultSession",
     "view": {
       "id": "linearGenomeView",
       "type": "LinearGenomeView",
@@ -59,11 +59,11 @@
         },
         {
           "type": "FeatureTrack",
-          "configuration": "cleaned.gff3",
+          "configuration": "data_MG1655/cleaned.gff3",
           "displays": [
             {
               "type": "LinearBasicDisplay",
-              "configuration": "cleaned.gff3-LinearBasicDisplay"
+              "configuration": "data_MG1655/cleaned.gff3-LinearBasicDisplay"
             }
           ]
         },
@@ -81,7 +81,7 @@
     }
   },
   "tracks": [
-     {
+    {
       "type": "FeatureTrack",
       "trackId": "data_MG1655/insercoes_sorted.bed",
       "name": "Inserções MG1655 (BED)",
@@ -201,25 +201,6 @@
     }
   ],
   "aggregateTextSearchAdapters": [
-    {
-      "type": "TrixTextSearchAdapter",
-      "textSearchAdapterId": "MG1655-index",
-      "ixFilePath": {
-        "uri": "trix/MG1655.ix",
-        "locationType": "UriLocation"
-      },
-      "ixxFilePath": {
-        "uri": "trix/MG1655.ixx",
-        "locationType": "UriLocation"
-      },
-      "metaFilePath": {
-        "uri": "trix/MG1655_meta.json",
-        "locationType": "UriLocation"
-      },
-      "assemblyNames": [
-        "E. coli MG1655"
-      ]
-    },
     {
       "type": "TrixTextSearchAdapter",
       "textSearchAdapterId": "E. coli MG1655-index",

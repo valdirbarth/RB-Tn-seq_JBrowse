@@ -1,8 +1,8 @@
 {
-  "dateCreated": "2026-03-17T14:27:42.881Z",
+  "dateCreated": "2026-03-18T12:41:58.020Z",
   "tracks": [
     {
-      "trackId": "cleaned.gff3",
+      "trackId": "data_MG1655/cleaned.gff3",
       "attributesIndexed": [
         "Name",
         "ID"
@@ -14,12 +14,12 @@
       "adapterConf": {
         "type": "Gff3TabixAdapter",
         "gffGzLocation": {
-          "uri": "cleaned.gff3.gz",
+          "uri": "data/data_MG1655/cleaned.gff3.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "cleaned.gff3.gz.tbi",
+            "uri": "data/data_MG1655/cleaned.gff3.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
