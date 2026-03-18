@@ -81,6 +81,28 @@
     }
   },
   "tracks": [
+     {
+      "type": "FeatureTrack",
+      "trackId": "insercoes_sorted.bed",
+      "name": "Inserções MG1655 (BED)",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "data/data_MG1655/insercoes_sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "data/data_MG1655/insercoes_sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "E. coli MG1655"
+      ]
+    },
     {
       "type": "FeatureTrack",
       "trackId": "cleaned.gff3",
