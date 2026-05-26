@@ -1,11 +1,13 @@
 {
-  "dateCreated": "2026-03-18T12:39:26.406Z",
+  "dateCreated": "2026-05-26T14:25:48.041Z",
   "tracks": [
     {
       "trackId": "data_MN12/GCF_000961215.1_ASM96121v1_genomic_ordered.gff3",
       "attributesIndexed": [
+        "ID",
         "Name",
-        "ID"
+        "locus_tag",
+        "old_locus_tag"
       ],
       "excludedTypes": [
         "CDS",

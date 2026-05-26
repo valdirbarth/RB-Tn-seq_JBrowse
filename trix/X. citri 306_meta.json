@@ -1,0 +1,55 @@
+{
+  "dateCreated": "2026-05-26T14:25:48.374Z",
+  "tracks": [
+    {
+      "trackId": "final_annotations",
+      "attributesIndexed": [
+        "ID",
+        "Name",
+        "locus_tag",
+        "old_locus_tag"
+      ],
+      "excludedTypes": [
+        "CDS",
+        "exon"
+      ],
+      "adapterConf": {
+        "type": "Gff3Adapter",
+        "gffLocation": {
+          "uri": "final_annotations.gff",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    {
+      "trackId": "sequence_full.sorted.gff3",
+      "attributesIndexed": [
+        "ID",
+        "Name",
+        "locus_tag",
+        "old_locus_tag"
+      ],
+      "excludedTypes": [
+        "CDS",
+        "exon"
+      ],
+      "adapterConf": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "sequence_full.sorted.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "sequence_full.sorted.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      }
+    }
+  ],
+  "assemblyNames": [
+    "X. citri 306"
+  ]
+}

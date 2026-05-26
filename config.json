@@ -35,13 +35,31 @@
           }
         }
       }
+    },
+    {
+      "name": "X. citri 306",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "GCF_000007165.1_ASM716v1_genomic.fna-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "GCF_000007165.1_ASM716v1_genomic.fna",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "GCF_000007165.1_ASM716v1_genomic.fna.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
     }
   ],
   "configuration": {
     "defaultSession": "DefaultSession"
   },
   "connections": [],
- "defaultSession": {
+  "defaultSession": {
     "name": "DefaultSession",
     "view": {
       "id": "linearGenomeView",
@@ -199,6 +217,58 @@
       "assemblyNames": [
         "X. citri MN12"
       ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "insercoes.sorted",
+      "name": "insercoes.sorted",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "insercoes.sorted.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "X. citri 306"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "final_annotations",
+      "name": "final_annotations",
+      "adapter": {
+        "type": "Gff3Adapter",
+        "gffLocation": {
+          "uri": "final_annotations.gff",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "X. citri 306"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "sequence_full.sorted.gff3",
+      "name": "sequence_full.sorted.gff3",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "sequence_full.sorted.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "sequence_full.sorted.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "X. citri 306"
+      ]
     }
   ],
   "aggregateTextSearchAdapters": [
@@ -238,6 +308,25 @@
       },
       "assemblyNames": [
         "X. citri MN12"
+      ]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "X. citri 306-index",
+      "ixFilePath": {
+        "uri": "trix/X. citri 306.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/X. citri 306.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/X. citri 306_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": [
+        "X. citri 306"
       ]
     }
   ]

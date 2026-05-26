@@ -1,11 +1,13 @@
 {
-  "dateCreated": "2026-03-18T12:41:58.020Z",
+  "dateCreated": "2026-05-26T14:25:47.665Z",
   "tracks": [
     {
       "trackId": "data_MG1655/cleaned.gff3",
       "attributesIndexed": [
+        "ID",
         "Name",
-        "ID"
+        "locus_tag",
+        "old_locus_tag"
       ],
       "excludedTypes": [
         "CDS",
